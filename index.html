@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baú da Merenda - Escolha seu Prato</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-modern-chic header-aluno-simplificado">
+      <img
+        src="Screenshot_2.jpg"
+        alt="Logo Baú da Merenda"
+        class="logo-chic"
+      />
+      <h1>Cardápio do Dia</h1>
+      <div class="header-info">
+        <span id="current-date" class="info-item"></span>
+        <span id="current-time" class="info-item"></span>
+      </div>
+    </header>
+
+    <div class="modo-contagem-trigger-area">
+      <button
+        id="btnAtivarModoContagem"
+        class="btn-chic secondary btn-modo-contagem"
+      >
+        🚀 Ativar Modo Contagem Rápida
+      </button>
+    </div>
+
+    <main class="main-content-modern-chic main-aluno-simplificado">
+      <section class="cardapio-hoje-chic section-card">
+        <button
+          id="btnSairModoContagem"
+          class="btn-chic action-danger btn-sair-modo-contagem"
+          style="display: none"
+        >
+          Sair do Modo Contagem
+        </button>
+
+        <div class="modo-contagem-titulo" style="display: none">
+          <h2>MODO CONTAGEM RÁPIDA</h2>
+        </div>
+
+        <div class="turnos-selection">
+          <h3>Selecione o Turno:</h3>
+          <div class="turnos-buttons">
+            <button class="btn-turno active" data-turno="Manhã">Manhã</button>
+            <button class="btn-turno" data-turno="Tarde">Tarde</button>
+            <button class="btn-turno" data-turno="Noite">Noite</button>
+          </div>
+        </div>
+
+        <div id="cardapio-itens-aluno" class="itens-grid-chic"></div>
+        <div
+          id="loading-message-aluno"
+          class="info-message"
+          style="display: none"
+        >
+          <div
+            class="loading-spinner"
+            style="
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 8px;
+            "
+          ></div>
+          Carregando cardápio...
+        </div>
+        <button
+          id="confirmar-escolha-aluno"
+          class="btn-chic primary btn-grande-confirmar"
+        >
+          Confirmar Escolha
+        </button>
+      </section>
+
+      <section class="admin-access-section-minimal">
+        <a href="admin.html" class="btn-chic secondary-outline btn-admin-link"
+          >Acesso Administrativo</a
+        >
+      </section>
+    </main>
+
+    <footer class="footer-modern-chic footer-aluno-simplificado">
+      <p>Baú da Merenda Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
